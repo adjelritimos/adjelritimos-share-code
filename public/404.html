@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-      // Redireciona para o index.html
-      window.location.href = '/adjelritimos-share-code/';
+      // Captura o caminho atual da URL
+      const path = window.location.pathname;
+
+      // Redireciona para a mesma rota dentro do subdiretório do repositório
+      window.location.href = `/adjelritimos-share-code${path}`;
     </script>
   </head>
   <body>
