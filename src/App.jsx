@@ -8,9 +8,9 @@ const App = () => {
     return (
       <Router>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/session" element={<Session />} />
-            <Route path="/nocountsession" element={<SessionNoCount />} />
+            <Route path="/adjelritimos-share-code/" element={<Home />} />
+            <Route path="/adjelritimos-share-code/session" element={<Session />} />
+            <Route path="/adjelritimos-share-code/nocountsession" element={<SessionNoCount />} />
           </Routes>
       </Router>
     )

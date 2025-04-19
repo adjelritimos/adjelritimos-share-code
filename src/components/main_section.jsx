@@ -11,7 +11,7 @@ const MainSection = () => {
                         <p className="lead">
                             Escreva código junto com sua equipe e veja as alterações instantaneamente.
                         </p>
-                        <Link to={'/nocountsession'} className="btn btn-info text-white fw-bold rounded-pill btn-lg">
+                        <Link to={'/adjelritimos-share-code/nocountsession'} className="btn btn-info text-white fw-bold rounded-pill btn-lg">
                             Partilha seu código agora
                         </Link>
                     </div>
