@@ -16,7 +16,7 @@ const Register = () => {
                 <div class="modal-dialog w-25">
                     <div class="modal-content">
                         <div class="modal-header mb-0">
-                            <img src="/logo.png" alt="CodeShare Logo" width="80" height="auto" />
+                            <img src="./logo.png" alt="CodeShare Logo" width="80" height="auto" />
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">

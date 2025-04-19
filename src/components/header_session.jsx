@@ -4,7 +4,7 @@ const HeaderSession = ({ language, theme, setLanguage, setTheme }) => {
     return (
         <header className="">
             <div className="w-100 p-2 d-flex justify-content-between bg-white">
-                <img src="/logo.png" alt="CodeShare Logo" width="80" height="auto" />
+                <img src="./logo.png" alt="CodeShare Logo" width="80" height="auto" />
                 <div className="d-grid gap-2 d-flex justify-content-md-end">
                     <button className="btn btn-info rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <i className="fas fa-cog text-white"></i>
