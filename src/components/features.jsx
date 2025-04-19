@@ -11,7 +11,7 @@ const Features = () => {
                         <p>Edite o código em tempo real com a sua equipa.</p>
                     </div>
                     <div className="col-md-4 p-4 text-center btn btn-outline-info">
-                        <i className="fas fa-users fs-3 mx-auto w-25"></i>
+                        <i className="fas fa-users fs-3 display-4"></i>
                         <h3>Colaboração em Equipa</h3>
                         <p>Convide os membros da sua equipa para participarem na sua sessão.</p>
                     </div>
