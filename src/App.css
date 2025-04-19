@@ -1,0 +1,18 @@
+.btn-reg-log {
+  width: 100px;
+}
+
+.bg-color{
+  background-color: rgb(249, 255, 255);
+}
+
+.wigh-sidebar{
+  width: 300px;
+  min-width: 300px;
+  height: calc(100vh - 55px);
+}
+
+.editor {
+  width: 100%;
+  height: calc(100vh - 55px);
+}
