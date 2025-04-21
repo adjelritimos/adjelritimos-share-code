@@ -5,11 +5,9 @@
     <title>Redirecting...</title>
     <script>
       // Captura o caminho atual da URL
-      const path = window.location.pathname;
+      const path = window.location.pathname
       console.log(path)
-
-      // Redireciona para a mesma rota dentro do subdiretório do repositório
-      window.location.href = `/`;
+      window.location.href = `/${path}`
     </script>
   </head>
   <body>
