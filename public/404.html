@@ -5,9 +5,13 @@
     <title>Redirecting...</title>
     <script>
       // Captura o caminho atual da URL
-      const path = window.location.pathname
-      console.log(path)
-      window.location.href = `https://adjelritimos-share-code.onrender.com${path}`
+      const path = window.location.pathname;
+
+      // Verifica se a URL já contém o parâmetro de redirecionamento
+      if (!window.location.search.includes('redirected=true')) {
+        // Adiciona o parâmetro de redirecionamento e redireciona
+        window.location.href = `https://adjelritimos-share-code.onrender.com${path}?redirected=true`;
+      }
     </script>
   </head>
   <body>
