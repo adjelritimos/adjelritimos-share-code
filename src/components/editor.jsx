@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import * as monaco from 'monaco-editor'
-import { io } from 'socket.io-client'
+import socket from '../server/socket/soket_io'
 
-const socket = io('http://localhost:5000')
 
 const Editor = ({ sessionId, language, theme }) => {
 
