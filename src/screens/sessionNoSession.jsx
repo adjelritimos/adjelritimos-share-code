@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react"
-import { io } from "socket.io-client"
-import HeaderSession from "../components/header_session"
 import Editor from "../components/editor"
 import HeaderNoSession from "../components/headerNoSession"
+import socket from "../server/socket/soket_io"
 
 
-const socket = io("http://localhost:5000")
 
 const SessionNoCount = () => {
 
@@ -13,7 +11,6 @@ const SessionNoCount = () => {
     const [language, setLanguage] = useState("javascript")
     const [theme, setTheme] = useState("vs-light")
    
-
 
     useEffect(() => {
         socket.on("session-update", (data) => {

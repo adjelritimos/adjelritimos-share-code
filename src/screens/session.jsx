@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react"
-import { io } from "socket.io-client"
 import Sidebar from "../components/sidebar"
 import HeaderSession from "../components/header_session"
 import Editor from "../components/editor"
+import socket from "../server/socket/soket_io"
 
-
-const socket = io("http://localhost:5000")
 
 const Session = () => {
     const [sessionId, setSessionId] = useState('userId')
@@ -23,6 +21,7 @@ const Session = () => {
 
 
     useEffect(() => {
+        
         socket.on("session-update", (data) => {
             console.log("Atualização da sessão recebida:", data)
         })
