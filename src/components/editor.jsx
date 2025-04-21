@@ -47,6 +47,7 @@ const Editor = ({ sessionId, language, theme }) => {
         }
     }, [sessionId, language, theme])
 
+    
     return <div className="editor border p-0 m-0" ref={editorRef} />
 }
 
