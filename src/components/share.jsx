@@ -1,4 +1,7 @@
 const Share = () => {
+
+    const path = window.location.pathname
+
     return (
         <div>
             <div className="modal fade" id="shareCodeModal" tabindex="-1" aria-labelledby="shareCodeModalLabel" aria-hidden="true">
@@ -11,7 +14,7 @@ const Share = () => {
                         <div className="modal-body mt-0 pt-0">
                             <p className="mb-2">Qualquer pessoa com acesso a este URL verá o seu código em tempo real.</p>
                             <div className="input-group mb-3">
-                                <input type="text" className="form-control border-info" value="https://codeshare.io/G69oza" readonly />
+                                <input type="text" className="form-control border-info" value={path} readonly />
                                 <button className="input-group-text text-white bg-info"><i className="fas fa-copy"></i></button>
                             </div>
                         </div>
