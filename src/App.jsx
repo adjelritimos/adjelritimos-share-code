@@ -6,7 +6,7 @@ import SessionNoCount from './screens/sessionNoSession'
 
 const App = () => {
     return (
-      <Router basename='/adjelritimos-share-code/'>
+      <Router>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/session" element={<Session />} />
