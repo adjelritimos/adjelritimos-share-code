@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script>
-      // Captura o caminho atual da URL
-      const path = window.location.pathname;
-      console.log(path)
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>React Router</title>
+    <script type="text/javascript">
+        var pathSegmentsToKeep = 1
 
-      // Redireciona para a mesma rota dentro do subdiretório do repositório
-      window.location.href = `/adjelritimos-share-code/session`;
+        var l = window.location
+        l.replace(
+            l.protocol + 
+            "//" +
+            l.hostname +
+            (l.port ? ":" + l.port : "") +
+            l.pathname
+                .split("/")
+                .slice(0, 1 + pathSegmentsToKeep)
+                .join("/") +
+            "/?/" +
+            l.pathname.slice(1).split("/").slice(pathSegmentsToKeep).join("/").replace(/§/g, "~and~") +
+            (l.search ? "&" + l.search.slice(1).replace(/§/g, "~and~") : "") +
+            l.hash
+        )
     </script>
-  </head>
-  <body>
-  </body>
+</head>
+<body>
+    <!-- Conteúdo do corpo da página -->
+    <h1>Bem-vindo à Página!</h1>
+    <p>Este é um exemplo de uma página HTML com script JavaScript.</p>
+</body>
 </html>
