@@ -3,14 +3,5 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      input: {
-        main: './index.html',
-      },
-    },
-  },
-  server: {
-    historyApiFallback: true, // Redireciona todas as rotas para index.html
-  },
+  base: '/adjelritimos-share-code/'
 })

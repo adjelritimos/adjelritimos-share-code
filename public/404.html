@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script>
-      // Captura o caminho atual da URL
-      const path = window.location.pathname;
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>React Router</title>
+    <script type="text/javascript">
+        var pathSegmentsToKeep = 1
 
-      // Verifica se a URL já contém o parâmetro de redirecionamento
-      if (!window.location.search.includes('redirected=true')) {
-        // Adiciona o parâmetro de redirecionamento e redireciona
-        window.location.href = `https://adjelritimos-share-code.onrender.com${path}?redirected=true`;
-      }
+        var l = window.location
+        l.replace(
+            l.protocol + 
+            "//" +
+            l.hostname +
+            (l.port ? ":" + l.port : "") +
+            l.pathname
+                .split("/")
+                .slice(0, 1 + pathSegmentsToKeep)
+                .join("/") +
+            "/?/" +
+            l.pathname.slice(1).split("/").slice(pathSegmentsToKeep).join("/").replace(/§/g, "~and~") +
+            (l.search ? "&" + l.search.slice(1).replace(/§/g, "~and~") : "") +
+            l.hash
+        )
     </script>
-  </head>
-  <body>
-  </body>
+</head>
+<body>
+    <!-- Conteúdo do corpo da página -->
+    <h1>Bem-vindo à Página!</h1>
+    <p>Este é um exemplo de uma página HTML com script JavaScript.</p>
+</body>
 </html>
