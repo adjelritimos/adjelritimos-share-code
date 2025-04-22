@@ -6,7 +6,7 @@ import SessionNoCount from './screens/sessionNoSession'
 
 const App = () => {
     return (
-      <Router basename='/adjelritimos-share-code.onrender.com//'>
+      <Router basename='/adjelritimos-share-code.onrender.com/'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/session" element={<Session />} />
